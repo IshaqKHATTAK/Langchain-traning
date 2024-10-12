@@ -24,6 +24,8 @@ class multiply(BaseModel):
 
     a: int = Field(..., description="First integer")
     b: int = Field(..., description="Second integer")
+
+    
 tool = [Add,Multiple]
 
 llm = ChatOpenAI(model='gpt-4o-mini',api_key = api_key)
